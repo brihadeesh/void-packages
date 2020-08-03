@@ -17,8 +17,8 @@ build_options=""
 
 post_install() {
 	# install gnome and kde session scripts
-	#vbin "$DESTDIR/usr/share/e16/misc/Xclients.e16-gnome.sh" e16-gnome
-	#vbin "$DESTDIR/usr/share/e16/misc/Xclients.e16-kde.sh" e16-kde
+	vbin "$sourcepkg/misc/Xclients.e16-gnome.sh" e16-gnome
+	vbin "$sourcepkg/misc/Xclients.e16-kde.sh" e16-kde
 
 	# licences for e16 and fonts(?)
 	vlicense COPYING
