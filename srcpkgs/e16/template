@@ -13,7 +13,7 @@ license="BSD-2-Clause"
 homepage="https://enlightenment.org"
 distfiles="$SOURCEFORGE_SITE/enlightenment/${pkgname}-${version}.tar.gz"
 checksum=b07d301a0a67ac020974afcbe779e1d48b376eab2e477fb189277c13b76d4a67
-build_options="--prefix=/usr"
+make_install_args="--prefix=/usr"
 
 post_install() {
 	# install gnome and kde session scripts
