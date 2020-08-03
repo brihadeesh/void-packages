@@ -4,11 +4,11 @@ version=1.0.22
 revision=1
 archs="i686 x86_64"
 build_style=gnu-configure
-# configure_args="--prefix=/usr --sysconfdir=/etc --enable-sound=alsa"
-#make_install_args="--exec-prefix=/usr --bindir=${EPREFIX}/bin"
+configure_args="--prefix=/usr --sysconfdir=/etc --enable-sound=alsa"
+make_install_args="--prefix=/usr"
 #make_build_args=""
 hostmakedepends="pkg-config tar"
-makedepends="perl pango-devel libXinerama-devel libXrandr-devel imlib2-devel libXcomposite-devel"
+makedepends="perl pango-devel libXinerama-devel libXrandr-devel imlib2-devel libXcomposite-devel alsa-lib-devel libsndfile-devel"
 short_desc="Enlightenment DR16 window manager"
 maintainer="Brihadeesh <brihadeesh@protonmail.com>"
 license="BSD-2-Clause"
