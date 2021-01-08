@@ -2,7 +2,7 @@
 pkgname=paleta
 version=1.0.2
 revision=1
-build_style=cmake
+build_style=gnu-makefile
 hostmakedepends="pkg-config tar"
 makedepends="cmake"
 short_desc="Change terminal colors on-the-fly independent of terminal emulator"
